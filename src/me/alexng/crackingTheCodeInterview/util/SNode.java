@@ -20,4 +20,12 @@ public class SNode {
         current.next = n;
     }
 
+    public void appendToTail(SNode d) {
+        SNode current = this;
+        while (current.next != null) {
+            current = current.next;
+        }
+        current.next = d;
+    }
+
 }
