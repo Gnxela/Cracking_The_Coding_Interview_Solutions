@@ -31,9 +31,6 @@ public class q1_5 {
                     j--;
                 }
                 j++;
-                if (j == a1.length - 1) {
-                    return true;
-                }
             }
             return true;
         } else {
