@@ -59,7 +59,7 @@ public class q2_7 {
 
     //Thought of a another solution
     public static boolean collide2(SNode list1, SNode list2) {
-        SNode current = list1;
+        SNode<Integer> current = list1;
         HashMap<Integer, ArrayList<SNode>> map = new HashMap<>();
         int i = 0;
         while (current != null) {

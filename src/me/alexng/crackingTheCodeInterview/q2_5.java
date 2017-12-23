@@ -29,9 +29,9 @@ public class q2_5 {
 
     public static SNode sum(SNode a, SNode b) {
         int length = 0;
-        SNode result = null;
-        SNode i = a;
-        SNode j = b;
+        SNode<Integer> result = null;
+        SNode<Integer> i = a;
+        SNode<Integer> j = b;
 
         //Count the max numbers in the list, question didn't specify what was and wasn't valid input
         while (i != null || j != null) {

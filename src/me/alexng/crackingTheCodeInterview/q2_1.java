@@ -36,7 +36,7 @@ public class q2_1 {
         if (list == null)
             return;
         ArrayList<Integer> data = new ArrayList<>();
-        SNode current = list;
+        SNode<Integer> current = list;
         data.add(current.data);
         while (current.next != null) {
             if (data.contains(current.next.data)) {

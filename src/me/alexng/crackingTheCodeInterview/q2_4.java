@@ -32,9 +32,9 @@ public class q2_4 {
     }
 
     public static SNode partition(SNode list, int partition) {
-        SNode before = null;
-        SNode after = null;
-        SNode current = list;
+        SNode<Integer> before = null;
+        SNode<Integer> after = null;
+        SNode<Integer> current = list;
         while (current != null) {
             if (current.data < partition) {
                 if (before == null) {

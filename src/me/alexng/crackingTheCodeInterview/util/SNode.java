@@ -3,17 +3,17 @@ package me.alexng.crackingTheCodeInterview.util;
 /**
  * A singly linked list for used in section 2.
  */
-public class SNode {
-    public SNode next;
-    public int data;
+public class SNode<T> {
+    public SNode<T> next;
+    public T data;
 
-    public SNode(int data) {
+    public SNode(T data) {
         this.data = data;
     }
 
-    public void appendToTail(int d) {
-        SNode n = new SNode(d);
-        SNode current = this;
+    public void appendToTail(T d) {
+        SNode<T> n = new SNode(d);
+        SNode<T> current = this;
         while (current.next != null) {
             current = current.next;
         }
@@ -21,7 +21,7 @@ public class SNode {
     }
 
     public void appendToTail(SNode d) {
-        SNode current = this;
+        SNode<T> current = this;
         while (current.next != null) {
             current = current.next;
         }
