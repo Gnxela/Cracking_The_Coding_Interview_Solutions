@@ -10,7 +10,7 @@ import me.alexng.crackingTheCodeInterview.util.SNode;
 public class q3_3 {
 
     public static void main(String[] args) {
-        SetOfStacks<Integer> stacks = new SetOfStacks(8);
+        SetOfStacks<Integer> stacks = new SetOfStacks<>(8);
         for (int i = 0; i < 100; i++) {
             stacks.push(i);
         }
@@ -36,7 +36,8 @@ public class q3_3 {
     //Rather than rewriting the entire thing just extend it
     static class SetOfStacks<T> {
 
-        public int maxSize;
+
+        int maxSize;
         SNode<LimitedStack<T>> stack;
 
         public SetOfStacks(int maxSize) {
