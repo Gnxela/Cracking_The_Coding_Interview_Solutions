@@ -33,9 +33,7 @@ public class q3_3 {
         System.out.println((--i) + " total stacks.");
     }
 
-    //Rather than rewriting the entire thing just extend it
     static class SetOfStacks<T> {
-
 
         int maxSize;
         SNode<LimitedStack<T>> stack;
