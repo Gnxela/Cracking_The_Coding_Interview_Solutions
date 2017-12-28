@@ -16,6 +16,11 @@ public class Queue<T> {
         current.next = new Node<T>(data);
     }
     */
+
+    public boolean isEmpty() {
+        return first == null;
+    }
+
     public void add(T data) {
         Node node = new Node<T>(data);
         if (last != null) {

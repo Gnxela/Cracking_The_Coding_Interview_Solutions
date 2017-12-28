@@ -1,3 +1,4 @@
 Redo Questions:
     q1_5            Seems long winded. There's probably a better solution
     q3_5            Shouldn't need to order every push
+    q4_1            Using a lot of memory.
