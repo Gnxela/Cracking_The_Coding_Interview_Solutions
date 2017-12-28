@@ -1,19 +1,19 @@
 package me.alexng.crackingTheCodeInterview.util;
 
-public class BinaryNode {
+public class BinaryNode<T> {
     public BinaryNode left, right;
-    public String name;
+    public T data;
 
-    public BinaryNode(String name) {
-        this.name = name;
+    public BinaryNode(T data) {
+        this.data = data;
     }
 
-    public BinaryNode createLeft(String name) {
+    public BinaryNode createLeft(T name) {
         left = new BinaryNode(name);
         return left;
     }
 
-    public BinaryNode createRight(String name) {
+    public BinaryNode createRight(T name) {
         right = new BinaryNode(name);
         return right;
     }
