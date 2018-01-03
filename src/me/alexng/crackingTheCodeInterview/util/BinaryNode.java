@@ -1,7 +1,7 @@
 package me.alexng.crackingTheCodeInterview.util;
 
 public class BinaryNode<T> {
-    public BinaryNode left, right;
+    public BinaryNode<T> left, right;
     public T data;
 
     public BinaryNode(T data) {
